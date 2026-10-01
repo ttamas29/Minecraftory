@@ -7,9 +7,10 @@ lowk top tier weboldal in the world
 Bemutató weboldal készítése a Minecraft játékról.
 
 ## 2. TODOs
+
 - [ ] Anyaggyűjtés
     - [ ] Képek
-    - [ ] Fontok
+    - [x] Fontok
 - [ ] Szöveg gyártás
 - [ ] Programozás / Layout
     - [ ] Nav
@@ -20,4 +21,11 @@ Bemutató weboldal készítése a Minecraft játékról.
     - [ ] Footer
     - TBD
 
-## 3. TBD
+## 3. Követelmények
+
+Inspiráció -> [https://minecraft.net/en-us/](https://minecraft.net/en-us/)
+
+- [ ] Játék bemutatása
+- [ ] Letöltés
+- [ ] GYIK
+- [ ] Vásárlás oldal

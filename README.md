@@ -13,8 +13,8 @@ Bemutató weboldal készítése a Minecraft játékról. A weboldal célja, hogy
     - [x] Fontok
 - [ ] Szöveg gyártás
 - [ ] Programozás / Layout
-    - [ ] Nav
-    - [ ] Hero
+    - [x] Nav
+    - [x] Hero
     - [ ] Section 1
     - [ ] Section 2
     - [ ] Section 3
@@ -25,22 +25,22 @@ Bemutató weboldal készítése a Minecraft játékról. A weboldal célja, hogy
 
 Inspiráció -> [https://minecraft.net/en-us/](https://minecraft.net/en-us/)
 
-- [ ] Játék bemutatása
-- [ ] Játékmenet ismertetése
-- [ ] Játékmódok bemutatása
-- [ ] Képgaléria
+- [x] Játék bemutatása
+- [x] Játékmenet ismertetése
+- [x] Játékmódok bemutatása
+- [x] Képgaléria
 
 ---
 
-- [ ] Letöltési információk
-- [ ] Platformok
-- [ ] Letöltési hivatkozás
+- [x] Letöltési információk
+- [x] Platformok
+- [x] Letöltési hivatkozás
 
 ---
 
-- [ ] GYIK szekció
-- [ ] Gyakori problémák
-- [ ] Gyakori kérdések
+- [x] GYIK szekció
+- [x] Gyakori problémák
+- [x] Gyakori kérdések
 
 ---
 

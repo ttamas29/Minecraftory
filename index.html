@@ -9,22 +9,20 @@
         <link rel="stylesheet" href="assets/styles/main.css">
     </head>
     <body>
-        <nav>
-            <img src="assets/images/logo.png" alt="Minecraft Logo" title="Minecraft Logo" class="brand-logo">
+        <nav id="navigation">
+            <div class="nav-header">
+                <img src="assets/images/logo.png" alt="Minecraft Logo" title="Minecraft Logo" class="brand-logo">
+                <button title="Navigáció kinyitása/becsukása" class="btn menu-toggle" onclick="toggleNavigation(this)"><img src="assets/images/icons/menu.png" alt="Menü ikon"></button>
+            </div>
+            <div class="menu-contents">
+                <a href="#" class="btn">Felfedezés</a>
+                <a href="#" class="btn">GYIK</a>
+                <a href="#" class="btn">Vásárlás</a>
+                <a href="#" class="btn secondary">Bejelentkezés</a>
+                <a href="#" class="btn primary">Letöltés</a>
+            </div>
         </nav>
 
-        <div style="width: 300px;">
-            <button class="btn">hello world</button>
-            <button class="btn primary">hello world</button>
-            <button class="btn secondary">hello world</button>
-            <button class="btn tertiary">hello world</button>
-
-            <button class="btn" disabled>disabled world</button>
-            <button class="btn primary" disabled>disabled world</button>
-            <button class="btn secondary" disabled>disabled world</button>
-            <button class="btn tertiary" disabled>disabled world</button>
-    
-            <a href="#">Letöltés</a>
-        </div>
+        <script src="assets/scripts/nav.js"></script>
     </body>
 </html>

@@ -23,12 +23,89 @@ nav {
 
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 12px;
     padding: 12px 24px;
 
-    .brand-logo {
-        width: 222px;
-        height: 38px;
-        object-fit: contain;
+    background-color: #252525;
+
+    border-bottom: 4px solid #090909;
+
+    .nav-header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 12px;
+
+        width: 100%;
+
+        .brand-logo {
+            width: 222px;
+            height: 38px;
+            object-fit: contain;
+        }
+    
+        .menu-toggle {
+            display: none;
+    
+            margin-left: auto;
+        }
+    }
+
+    .menu-contents {
+        width: 100%;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 12px;
+    }
+}
+
+@keyframes menu-expanded {
+    0% {
+        filter: brightness(1);
+    }
+
+    50% {
+        filter: brightness(0.5);
+    }
+
+    100% {
+        filter: brightness(1);
+    }
+}
+
+@media (max-width: 868px) {
+    nav>.nav-header {
+        .menu-toggle {
+            display: unset;
+        }
+    }
+
+    nav {
+        .menu-contents {
+            display: none;
+        }
+    }
+
+    nav.expanded {
+        flex-direction: column;
+
+        height: unset;
+
+        .menu-contents {
+            display: unset;
+
+            flex-direction: column;
+            align-items: stretch;
+        }
+
+        .nav-header {
+            .menu-toggle {
+                animation: menu-expanded 1.5s ease-in-out 0s infinite;
+            }
+        }
     }
 }

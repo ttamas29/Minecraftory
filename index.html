@@ -1,199 +1,222 @@
 <!DOCTYPE html>
 <html lang="hu">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Minecraftory</title>
-        <link rel="stylesheet" href="assets/styles/fonts.css">
-        <link rel="stylesheet" href="assets/styles/components.css">
-        <link rel="stylesheet" href="assets/styles/main.css">
-    </head>
-    <body>
-        <nav id="navigation">
-            <div class="nav-header">
-                <img src="assets/images/logo.png" alt="Minecraft Logo" title="Minecraft Logo" class="brand-logo">
-                <button title="Navigáció kinyitása/becsukása" class="btn menu-toggle" onclick="toggleNavigation(this)"><img src="assets/images/icons/menu.png" alt="Menü ikon"></button>
-            </div>
-            <div class="menu-contents">
-                <a href="#" class="btn">Felfedezés</a>
-                <a href="#" class="btn">GYIK</a>
-                <a href="#" class="btn">Vásárlás</a>
-                <a href="#" class="btn secondary">Bejelentkezés</a>
-                <a href="#" class="btn primary">Letöltés</a>
-            </div>
-        </nav>
-        <div class="hero">
-            <div class="text">
-                <h2>Építs. Fedezz fel. Éld túl.</h2>
-                <p>A végtelen kreativitás és kaland világa. Alkoss bármit, fedezz fel mindent, és éld át a Minecraft egyedi élményét.</p>
-            </div>
-            <img src="assets/images/icons/scrolldown-suggestion.png" alt="Lefelé mutató nyíl" title="Lefelé mutató nyíl">
-        </div>
-        
-        <h2 class="section-title">Játékmenet</h2>
-        <div class="section type1">
-            <div class="content">
-                <img src="assets/images/section_1_1.png" alt="Világ létrehozása" title="Világ létrehozása" class="thumbnail">
-                <div class="description">
-                    <h3>1. Világ létrehozása</h3>
-                    <p>something</p>
-                </div>
-            </div>
-            <div class="content">
-                <img src="assets/images/section_1_2.png" alt="Felfedezés" title="Felfedezés" class="thumbnail">
-                <div class="description">
-                    <h3>2. Felfedezés</h3>
-                    <p>Barangolj erdőkön, hegyeken, óceánokon és barlangokon keresztül, miközben új helyeket és titkokat fedezel fel.</p>
-                </div>
-            </div>
-            <div class="content">
-                <img src="assets/images/section_1_3.png" alt="Építkezés" title="Építkezés" class="thumbnail">
-                <div class="description">
-                    <h3>3. Építkezés</h3>
-                    <p>Készíts egyszerű menedéket vagy alkoss hatalmas építményeket blokknyi pontossággal.</p>
-                </div>
-            </div>
-            <div class="content">
-                <img src="assets/images/section_1_4.png" alt="Kreativitás" title="Kreativitás" class="thumbnail">
-                <div class="description">
-                    <h3>4. Kreativitás</h3>
-                    <p>Engedd szabadjára a fantáziádat, és valósítsd meg bármilyen ötletedet a saját stílusod szerint.</p>
-                </div>
-            </div>
-        </div>
-        
-        <h2 class="section-title">Játékmódok</h2>
-        <div class="section type2">
-            <div class="content">
-                <img src="assets/images/section_2_1.png" alt="Egyjátékos mód" title="Egyjátékos mód" class="thumbnail">
-                <div class="description">
-                    <h3>Egyjátékos mód</h3>
-                    <p>Játssz egyedül vagy helyileg a barátaiddal túlélő vagy kreatív módban.</p>
-                </div>
-            </div>
-            <div class="content">
-                <img src="assets/images/section_2_2.png" alt="Többjátékos mód" title="Többjátékos mód" class="thumbnail">
-                <div class="description">
-                    <h3>Többjátékos mód</h3>
-                    <p>Játssz szervereken más játékosokkal és szerezz új barátokat!</p>
-                </div>
-            </div>
-            <div class="content">
-                <img src="assets/images/section_2_3.png" alt="Realms" title="Realms" class="thumbnail">
-                <div class="description">
-                    <h3>Realms</h3>
-                    <p>Játssz a saját privát világodban, amely bármikor elérhető számodra és barátaid számára.</p>
-                </div>
-            </div>
-        </div>
 
-        <h2 class="section-title">Letöltés</h2>
-        <div class="section type2 icons">
-            <div class="content">
-                <img src="assets/images/icons/phone.png" alt="Telefonra" title="Telefonra" class="thumbnail">
-                <div class="description">
-                    <h3>Telefonra</h3>
-                    <p>Játssz bárhol és bármikor mobilkészülékeden.</p>
-                    <a href="#">Letöltés</a>
-                </div>
-            </div>
-            <div class="content">
-                <img src="assets/images/icons/pc.png" alt="Számítógépre" title="Számítógépre" class="thumbnail">
-                <div class="description">
-                    <h3>Számítógépre</h3>
-                    <p>A Minecraft teljes élménye egyetlen platformon.</p>
-                    <a href="#">Letöltés</a>
-                </div>
-            </div>
-            <div class="content">
-                <img src="assets/images/icons/console.png" alt="Konzolra" title="Konzolra" class="thumbnail">
-                <div class="description">
-                    <h3>Konzolra</h3>
-                    <p>Építs és kalandozz kedvenc konzolodon barátaiddal együtt.</p>
-                    <a href="#">Letöltés</a>
-                </div>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minecraftory</title>
+    <link rel="stylesheet" href="assets/styles/fonts.css">
+    <link rel="stylesheet" href="assets/styles/components.css">
+    <link rel="stylesheet" href="assets/styles/main.css">
+</head>
+
+<body>
+    <nav id="navigation">
+        <div class="nav-header">
+            <img src="assets/images/logo.png" alt="Minecraft Logo" title="Minecraft Logo" class="brand-logo">
+            <button title="Navigáció kinyitása/becsukása" class="btn menu-toggle" onclick="toggleNavigation(this)"><img
+                    src="assets/images/icons/menu.png" alt="Menü ikon"></button>
+        </div>
+        <div class="menu-contents">
+            <a href="#" class="btn">Felfedezés</a>
+            <a href="#" class="btn">GYIK</a>
+            <a href="#" class="btn">Vásárlás</a>
+            <a href="#" class="btn secondary">Bejelentkezés</a>
+            <a href="#" class="btn primary">Letöltés</a>
+        </div>
+    </nav>
+    <div class="hero">
+        <div class="text">
+            <h2>Építs. Fedezz fel. Éld túl.</h2>
+            <p>A végtelen kreativitás és kaland világa. Alkoss bármit, fedezz fel mindent, és éld át a Minecraft egyedi
+                élményét.</p>
+        </div>
+        <img src="assets/images/icons/scrolldown-suggestion.png" alt="Lefelé mutató nyíl" title="Lefelé mutató nyíl">
+    </div>
+
+    <h2 class="section-title">Játékmenet</h2>
+    <div class="section type1">
+        <div class="content">
+            <img src="assets/images/section_1_1.png" alt="Világ létrehozása" title="Világ létrehozása"
+                class="thumbnail">
+            <div class="description">
+                <h3>1. Világ létrehozása</h3>
+                <p>something</p>
             </div>
         </div>
-
-        <h2 class="section-title">GYIK</h2>
-        <div class="faq">
-            <div class="content" onclick="toggleFAQ(this)">
-                <div class="question">
-                    <p>Kell internetkapcsolat a játékhoz?</p>
-                    <img src="assets/images/icons/arrow_down.png" alt="Kinyitás/becsukás">
-                </div>
-                <p class="answer">idk bro</p>
-            </div>
-            <div class="content" onclick="toggleFAQ(this)">
-                <div class="question">
-                    <p>Játszhatok a barátaimmal?</p>
-                    <img src="assets/images/icons/arrow_down.png" alt="Kinyitás/becsukás">
-                </div>
-                <p class="answer">yes if you have any</p>
-            </div>
-            <div class="content" onclick="toggleFAQ(this)">
-                <div class="question">
-                    <p>Mely platformokon érhető el a Minecraft?</p>
-                    <img src="assets/images/icons/arrow_down.png" alt="Kinyitás/becsukás">
-                </div>
-                <p class="answer">all of it</p>
-            </div>
-            <div class="content" onclick="toggleFAQ(this)">
-                <div class="question">
-                    <p>Van magyar nyelv a játékban?</p>
-                    <img src="assets/images/icons/arrow_down.png" alt="Kinyitás/becsukás">
-                </div>
-                <p class="answer">go buy the game and find it out yourself</p>
+        <div class="content">
+            <img src="assets/images/section_1_2.png" alt="Felfedezés" title="Felfedezés" class="thumbnail">
+            <div class="description">
+                <h3>2. Felfedezés</h3>
+                <p>Barangolj erdőkön, hegyeken, óceánokon és barlangokon keresztül, miközben új helyeket és titkokat
+                    fedezel fel.</p>
             </div>
         </div>
-
-        <h2 class="section-title">Gyakori problémák</h2>
-        <div class="faq">
-            <div class="content" onclick="toggleFAQ(this)">
-                <div class="question">
-                    <p>Nem indul el a játék</p>
-                    <img src="assets/images/icons/arrow_down.png" alt="Kinyitás/becsukás">
-                </div>
-                <p class="answer">skill issue</p>
-            </div>
-            <div class="content" onclick="toggleFAQ(this)">
-                <div class="question">
-                    <p>Játszhatok a barátaimmal?</p>
-                    <img src="assets/images/icons/arrow_down.png" alt="Kinyitás/becsukás">
-                </div>
-                <p class="answer">skill issue</p>
-            </div>
-            <div class="content" onclick="toggleFAQ(this)">
-                <div class="question">
-                    <p>Nem tudok csatlakozni egy szerverhez</p>
-                    <img src="assets/images/icons/arrow_down.png" alt="Kinyitás/becsukás">
-                </div>
-                <p class="answer">skill issue</p>
-            </div>
-            <div class="content" onclick="toggleFAQ(this)">
-                <div class="question">
-                    <p>Alacsony FPS vagy akadozás</p>
-                    <img src="assets/images/icons/arrow_down.png" alt="Kinyitás/becsukás">
-                </div>
-                <p class="answer">skill issue</p>
-            </div>
-            <div class="content" onclick="toggleFAQ(this)">
-                <div class="question">
-                    <p>Nem tudok csatlakozni egy szerverhez</p>
-                    <img src="assets/images/icons/arrow_down.png" alt="Kinyitás/becsukás">
-                </div>
-                <p class="answer">skill issue</p>
-            </div>
-            <div class="content" onclick="toggleFAQ(this)">
-                <div class="question">
-                    <p>Nem tudok bejelentkezni a fiókomba</p>
-                    <img src="assets/images/icons/arrow_down.png" alt="Kinyitás/becsukás">
-                </div>
-                <p class="answer">skill issue</p>
+        <div class="content">
+            <img src="assets/images/section_1_3.png" alt="Építkezés" title="Építkezés" class="thumbnail">
+            <div class="description">
+                <h3>3. Építkezés</h3>
+                <p>Készíts egyszerű menedéket vagy alkoss hatalmas építményeket blokknyi pontossággal.</p>
             </div>
         </div>
+        <div class="content">
+            <img src="assets/images/section_1_4.png" alt="Kreativitás" title="Kreativitás" class="thumbnail">
+            <div class="description">
+                <h3>4. Kreativitás</h3>
+                <p>Engedd szabadjára a fantáziádat, és valósítsd meg bármilyen ötletedet a saját stílusod szerint.</p>
+            </div>
+        </div>
+    </div>
 
-        <script src="assets/scripts/nav.js"></script>
-        <script src="assets/scripts/faq.js"></script>
-    </body>
+    <h2 class="section-title">Játékmódok</h2>
+    <div class="section type2">
+        <div class="content">
+            <img src="assets/images/section_2_1.png" alt="Egyjátékos mód" title="Egyjátékos mód" class="thumbnail">
+            <div class="description">
+                <h3>Egyjátékos mód</h3>
+                <p>Játssz egyedül vagy helyileg a barátaiddal túlélő vagy kreatív módban.</p>
+            </div>
+        </div>
+        <div class="content">
+            <img src="assets/images/section_2_2.png" alt="Többjátékos mód" title="Többjátékos mód" class="thumbnail">
+            <div class="description">
+                <h3>Többjátékos mód</h3>
+                <p>Játssz szervereken más játékosokkal és szerezz új barátokat!</p>
+            </div>
+        </div>
+        <div class="content">
+            <img src="assets/images/section_2_3.png" alt="Realms" title="Realms" class="thumbnail">
+            <div class="description">
+                <h3>Realms</h3>
+                <p>Játssz a saját privát világodban, amely bármikor elérhető számodra és barátaid számára.</p>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="section-title">Letöltés</h2>
+    <div class="section type2 icons">
+        <div class="content">
+            <img src="assets/images/icons/phone.png" alt="Telefonra" title="Telefonra" class="thumbnail">
+            <div class="description">
+                <h3>Telefonra</h3>
+                <p>Játssz bárhol és bármikor mobilkészülékeden.</p>
+                <a href="#">Letöltés</a>
+            </div>
+        </div>
+        <div class="content">
+            <img src="assets/images/icons/pc.png" alt="Számítógépre" title="Számítógépre" class="thumbnail">
+            <div class="description">
+                <h3>Számítógépre</h3>
+                <p>A Minecraft teljes élménye egyetlen platformon.</p>
+                <a href="#">Letöltés</a>
+            </div>
+        </div>
+        <div class="content">
+            <img src="assets/images/icons/console.png" alt="Konzolra" title="Konzolra" class="thumbnail">
+            <div class="description">
+                <h3>Konzolra</h3>
+                <p>Építs és kalandozz kedvenc konzolodon barátaiddal együtt.</p>
+                <a href="#">Letöltés</a>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="section-title">GYIK</h2>
+    <div class="faq">
+        <div class="content" onclick="toggleFAQ(this)">
+            <div class="question">
+                <p>Kell internetkapcsolat a játékhoz?</p>
+                <img src="assets/images/icons/arrow_down.png" alt="Kinyitás/becsukás">
+            </div>
+            <p class="answer">idk bro</p>
+        </div>
+        <div class="content" onclick="toggleFAQ(this)">
+            <div class="question">
+                <p>Játszhatok a barátaimmal?</p>
+                <img src="assets/images/icons/arrow_down.png" alt="Kinyitás/becsukás">
+            </div>
+            <p class="answer">yes if you have any</p>
+        </div>
+        <div class="content" onclick="toggleFAQ(this)">
+            <div class="question">
+                <p>Mely platformokon érhető el a Minecraft?</p>
+                <img src="assets/images/icons/arrow_down.png" alt="Kinyitás/becsukás">
+            </div>
+            <p class="answer">all of it</p>
+        </div>
+        <div class="content" onclick="toggleFAQ(this)">
+            <div class="question">
+                <p>Van magyar nyelv a játékban?</p>
+                <img src="assets/images/icons/arrow_down.png" alt="Kinyitás/becsukás">
+            </div>
+            <p class="answer">go buy the game and find it out yourself</p>
+        </div>
+    </div>
+
+    <h2 class="section-title">Gyakori problémák</h2>
+    <div class="faq">
+        <div class="content" onclick="toggleFAQ(this)">
+            <div class="question">
+                <p>Nem indul el a játék</p>
+                <img src="assets/images/icons/arrow_down.png" alt="Kinyitás/becsukás">
+            </div>
+            <p class="answer">skill issue</p>
+        </div>
+        <div class="content" onclick="toggleFAQ(this)">
+            <div class="question">
+                <p>Játszhatok a barátaimmal?</p>
+                <img src="assets/images/icons/arrow_down.png" alt="Kinyitás/becsukás">
+            </div>
+            <p class="answer">skill issue</p>
+        </div>
+        <div class="content" onclick="toggleFAQ(this)">
+            <div class="question">
+                <p>Nem tudok csatlakozni egy szerverhez</p>
+                <img src="assets/images/icons/arrow_down.png" alt="Kinyitás/becsukás">
+            </div>
+            <p class="answer">skill issue</p>
+        </div>
+        <div class="content" onclick="toggleFAQ(this)">
+            <div class="question">
+                <p>Alacsony FPS vagy akadozás</p>
+                <img src="assets/images/icons/arrow_down.png" alt="Kinyitás/becsukás">
+            </div>
+            <p class="answer">skill issue</p>
+        </div>
+        <div class="content" onclick="toggleFAQ(this)">
+            <div class="question">
+                <p>Nem tudok csatlakozni egy szerverhez</p>
+                <img src="assets/images/icons/arrow_down.png" alt="Kinyitás/becsukás">
+            </div>
+            <p class="answer">skill issue</p>
+        </div>
+        <div class="content" onclick="toggleFAQ(this)">
+            <div class="question">
+                <p>Nem tudok bejelentkezni a fiókomba</p>
+                <img src="assets/images/icons/arrow_down.png" alt="Kinyitás/becsukás">
+            </div>
+            <p class="answer">skill issue</p>
+        </div>
+    </div>
+
+    <div class="buy">
+        <div class="card">
+            <img src="assets/images/buy_illust.png" alt="Illusztráció" title="Illusztráció">
+            <div class="contents">
+                <h3>Készen állsz a Minecraft kalandjaira?</h3>
+                <p>Indulj el saját Minecraft kalandodra még ma!
+                    <br><br>
+                    Fedezz fel végtelen világokat, építs bármit, amit csak elképzelsz, és élj át felejthetetlen
+                    kalandokat egyedül vagy barátaiddal. Válaszd ki a számodra legmegfelelőbb kiadást, és csatlakozz
+                    játékosok millióihoz szerte a világon.
+                </p>
+                <a href="#" class="btn primary">Tovább a vásárláshoz</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/scripts/nav.js"></script>
+    <script src="assets/scripts/faq.js"></script>
+</body>
+
 </html>

@@ -12,7 +12,7 @@ Bemutató weboldal készítése a Minecraft játékról. A weboldal célja, hogy
     - [x] Képek
     - [x] Fontok
 - [x] Szöveg gyártás
-- [x] Design
+- [x] [Design](https://www.figma.com/design/VeWbLLD6gA70l30wuGsqYS/Shared?node-id=0-1&p=f)
     - [x] Nav
     - [x] Hero
     - [x] Components (button, links, etc)
@@ -23,6 +23,8 @@ Bemutató weboldal készítése a Minecraft játékról. A weboldal célja, hogy
 ## 3. Követelmények
 
 Inspiráció -> [https://minecraft.net/en-us/](https://minecraft.net/en-us/)
+
+Design -> [Figma link](https://www.figma.com/design/VeWbLLD6gA70l30wuGsqYS/Shared?node-id=0-1&p=f)
 
 - [x] Játék bemutatása
 - [x] Játékmenet ismertetése

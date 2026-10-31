@@ -10,6 +10,7 @@ body {
 
     display: flex;
     flex-direction: column;
+    align-items: center;
     
     margin: 0;
     padding: 0;
@@ -140,6 +141,10 @@ div.hero {
     }
 }
 
+h2.section-title {
+    margin-top: 24px;
+}
+
 div.section {
     width: 100%;
 
@@ -149,16 +154,16 @@ div.section {
     align-items: center;
     gap: 24px;
     padding: 24px;
-    margin-top: 24px;
 
-    div.section-type1 {
+    div.content {
         display: flex;
         flex-direction: row;
+        align-items: center;
         gap: 12px;
 
         width: 100%;
 
-        &:nth-child(odd) {
+        &:nth-child(even) {
             flex-direction: row-reverse;
             text-align: right;
         }
@@ -183,17 +188,57 @@ div.section {
             }
         }
     }
+
+    &.type2 {
+        flex-direction: row;
+        align-items: start;
+
+        div.content {
+            flex-direction: column;
+    
+            div.description {
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+        }
+    }
 }
 
 @media (max-width: 768px) {
-    div.section>div.section-type1 {
-        flex-direction: column !important;
-        text-align: left !important;
+    div.section {
+        &.type2 {
+            flex-direction: column;
+        }
 
-        img.thumbnail {
-            width: 100%;
-            height: unset;
-            aspect-ratio: 338 / 192;
+        div.content {
+            flex-direction: column !important;
+        }
+
+        &:not(.type2) {
+            div.content {
+                text-align: left !important;
+        
+                img.thumbnail {
+                    width: 100%;
+                    height: unset;
+                    aspect-ratio: 338 / 192;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1068px) {
+    div.section {
+        &.type2 {
+            flex-direction: column;
+
+            div.content>img.thumbnail {
+                width: 100%;
+                height: unset;
+                aspect-ratio: 338 / 192;
+            }
         }
     }
 }

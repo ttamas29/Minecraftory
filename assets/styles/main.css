@@ -11,7 +11,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
     margin: 0;
     padding: 0;
 
@@ -32,7 +32,7 @@ nav {
 
     border-bottom: 4px solid #090909;
 
-    .nav-header {
+    div.nav-header {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -40,20 +40,26 @@ nav {
 
         width: 100%;
 
-        .brand-logo {
-            width: 222px;
-            height: 38px;
-            object-fit: contain;
+        a {
+            &::after {
+                display: none;
+            }
+
+            img.brand-logo {
+                width: 222px;
+                height: 38px;
+                object-fit: contain;
+            }
         }
-    
-        .menu-toggle {
+
+        button.menu-toggle {
             display: none;
-    
+
             margin-left: auto;
         }
     }
 
-    .menu-contents {
+    div.menu-contents {
         width: 100%;
 
         display: flex;
@@ -79,14 +85,14 @@ nav {
 }
 
 @media (max-width: 868px) {
-    nav>.nav-header {
-        .menu-toggle {
+    nav>div.nav-header {
+        button.menu-toggle {
             display: unset;
         }
     }
 
     nav {
-        .menu-contents {
+        div.menu-contents {
             display: none;
         }
     }
@@ -96,15 +102,15 @@ nav {
 
         height: unset;
 
-        .menu-contents {
+        div.menu-contents {
             display: unset;
 
             flex-direction: column;
             align-items: stretch;
         }
 
-        .nav-header {
-            .menu-toggle {
+        div.nav-header {
+            button.menu-toggle {
                 animation: pulse 1.5s ease-in-out 0s infinite;
             }
         }
@@ -121,11 +127,11 @@ div.hero {
     align-items: center;
     padding: 24px;
 
-    background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.75)), url(../images/background.png);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, .75)), url(../images/background.png);
     background-position: center;
     background-size: cover;
 
-    .text {
+    div.text {
         max-width: 720px;
 
         text-align: center;
@@ -185,7 +191,8 @@ div.section {
                 opacity: 0.75;
             }
 
-            a, p {
+            a,
+            p {
                 font-size: 20px;
             }
         }
@@ -197,7 +204,7 @@ div.section {
 
         div.content {
             flex-direction: column;
-    
+
             div.description {
                 justify-content: center;
                 align-items: center;
@@ -228,7 +235,7 @@ div.section {
         &:not(.type2) {
             div.content {
                 text-align: left !important;
-        
+
                 img.thumbnail {
                     width: 100%;
                     height: unset;
@@ -329,6 +336,7 @@ div.buy {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 24px;
     padding: 24px;
 
     div.card {
@@ -345,6 +353,12 @@ div.buy {
             height: 256px;
         }
 
+        img.edition-thumbnail {
+            width: 338px;
+            height: 192px;
+            border: 2px solid #707070;
+        }
+
         div.contents {
             width: 100%;
 
@@ -354,7 +368,7 @@ div.buy {
 
             p {
                 width: 100%;
-    
+
                 font-size: 20px;
 
                 opacity: 0.75;
@@ -363,6 +377,35 @@ div.buy {
             a {
                 margin-top: auto;
                 margin-left: auto;
+            }
+
+            div.purchase-actions {
+                width: 100%;
+                height: 100%;
+
+                display: flex;
+                flex-direction: row;
+                flex-flow: row wrap;
+                justify-content: flex-end;
+                align-items: flex-end;
+                gap: 12px;
+
+                div.price-info {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    span {
+                        font-size: 16px;
+
+                        opacity: 0.75;
+                    }
+                }
+
+                a {
+                    margin: unset;
+                }
             }
         }
     }
@@ -375,8 +418,14 @@ div.buy {
         img {
             width: 100%;
             aspect-ratio: 332 / 256;
-            
+
             object-fit: cover;
+        }
+
+        img.edition-thumbnail {
+            width: 100%;
+            height: unset;
+            aspect-ratio: 338 / 192 !important;
         }
 
         div.contents>a {
@@ -393,6 +442,7 @@ footer {
     justify-content: space-between;
     gap: 24px;
     padding: 24px;
+    margin-top: auto;
 
     background-color: #080808;
 

@@ -8,18 +8,17 @@ Bemutató weboldal készítése a Minecraft játékról. A weboldal célja, hogy
 
 ## 2. TODOs
 
-- [ ] Anyaggyűjtés
-    - [ ] Képek
+- [x] Anyaggyűjtés
+    - [x] Képek
     - [x] Fontok
 - [ ] Szöveg gyártás
-- [ ] Programozás / Layout
+- [x] Design
     - [x] Nav
     - [x] Hero
-    - [ ] Section 1
-    - [ ] Section 2
-    - [ ] Section 3
-    - [ ] Footer
-    - TBD
+    - [x] Components (button, links, etc)
+    - [x] Sections
+    - [x] Footer
+- [ ] Programozás
 
 ## 3. Követelmények
 
@@ -44,6 +43,6 @@ Inspiráció -> [https://minecraft.net/en-us/](https://minecraft.net/en-us/)
 
 ---
 
-- [ ] Vásárlási információk
-- [ ] Kiadások összehasonlítása
-- [ ] Vásárlási hivatkozás
+- [x] Vásárlási információk
+- [x] Kiadások összehasonlítása
+- [x] Vásárlási hivatkozás

@@ -384,3 +384,57 @@ div.buy {
         }
     }
 }
+
+footer {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 24px;
+
+    background-color: #080808;
+
+    div.branding {
+        max-width: 375px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        img.brand-logo {
+            width: 222px;
+            height: 38px;
+            object-fit: contain;
+        }
+
+        p {
+            width: 100%;
+
+            font-size: 16px;
+
+            opacity: 0.75;
+        }
+    }
+
+    div.links {
+        width: 100%;
+
+        display: flex;
+        flex-direction: row;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+        gap: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+
+        div.branding {
+            max-width: unset;
+        }
+    }
+}
